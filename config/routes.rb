@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  # This is a blank app! Pick your first screen, build out the RCAV, and go from there. E.g.:
-  # get("/your_first_screen", { :controller => "pages", :action => "first" })
+get ("/rock", { :controller => "zebra", :action => "rock_action" })
+
+get ("/paper", { :controller => "zebra", :action => "paper_action" })
+
+get ("/scissors", { :controller => "zebra", :action => "scissors_action" })
 end
